@@ -5,5 +5,5 @@ require_relative("../bus_lab.rb")
 
 class TestPerson < MiniTest::Test
   def setup()
-      @person = Person.new("Joe", "15")
+      @passenger1 = Person.new("Joe", "15")
   end

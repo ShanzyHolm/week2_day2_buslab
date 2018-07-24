@@ -18,4 +18,8 @@ class Bus
     return @passengers.count()
   end
 
+  def pick_up(passenger1)
+    @passengers.push(passenger1)
+  end
+
 end
