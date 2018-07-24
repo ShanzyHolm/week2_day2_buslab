@@ -22,4 +22,17 @@ class Bus
     @passengers.push(passenger1)
   end
 
+  def drop_off(passenger)
+    @passengers.delete(passenger)
+  end
+
+  def empty()
+    @passengers.clear()
+  end
+
+  def pick_up_from_stop(bus_stop)
+    person = bus_stop.get_passenger()
+    pick_up(person)
+  end
+
 end
