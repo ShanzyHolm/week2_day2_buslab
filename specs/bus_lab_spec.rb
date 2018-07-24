@@ -12,4 +12,10 @@ class TestBus < MiniTest::Test
     assert_equal("brum, brum", @bus1.sound("brum, brum"))
   end
 
+  def test_passengers_count()
+    assert_equal(0, @bus1.passenger_count())
+  end
+
+
+
 end

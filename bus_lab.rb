@@ -7,10 +7,15 @@ class Bus
   def initialize(route_number, destination)
     @route = route_number
     @destination = destination
+    @passengers = []
   end
 
   def sound(sound)
     return sound = "brum, brum"
+  end
+
+  def passenger_count()
+    return @passengers.count()
   end
 
 end
